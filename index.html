@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 8px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            overflow: auto;
+            max-height: calc(100vh - 165px);
+            text-align: left;
+            padding: 2em;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 85%;
+            max-width: 800px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            color: #444;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        /* 联系表单容器 */
+        #contact-section {
+            margin-top: 5em;
+            text-align: center;
+        }
+        /* 表单整体样式 */
+        .fs-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 100%;
+            padding: 0 10px;
+        }
+        /* 表单字段容器 */
+        .fs-field {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        /* 表单标签 */
+        .fs-label {
+            margin-bottom: 5px;
+            font-size: 1em;
+            color: #333;
+            font-weight: bold;
+        }
+        /* 输入框样式 */
+        .fs-input,
+        .fs-textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            width: 100%;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+        /* 文本区域特定样式 */
+        .fs-textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        /* 输入框聚焦和悬停效果 */
+        .fs-input:focus,
+        .fs-textarea:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+        .fs-input:hover,
+        .fs-textarea:hover {
+            border-color: #888;
+        }
+        /* 按钮组 */
+        .fs-button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        /* 提交按钮特定样式 */
+        .fs-button[type="submit"] {
+            background-color: #000000;
+        }
+        .fs-button[type="submit"]:hover {
+            background-color: #545454;
+        }
+        /* 响应式调整 */
+        @media (min-width: 600px) {
+            .fs-button-group {
+                flex-direction: row;
+                justify-content: center;
+            }
+            .fs-form {
+                padding: 0;
+            }
+        }
+        /* 通用按钮样式 */
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #000;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #545454;
+        }
+        #copyright p {
+            margin: 0;
+  text-align: center;
+  font-size: 0.8em;
+}
+#copyright p:first-child {
+    margin-top: 6em;
+}
+#copyright p:last-child {
+    margin-bottom: 3em;
+}
+        li {
+        margin: 0;
+font-size: 0.8em;
+        }
+        #routes-and-stops {
+            margin-top: 3em;
+        }
+            #shifts-ver li:last-child {
+margin-top: 1em;
+            }
+        
+    </style>
+</head>
+<body>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCDE1JNW2B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-LCDE1JNW2B");
+    </script>
+    <div class="container">
+        <h1>DRIVER Helper</h1>
+        <h2>data version</h2>
+        <ul>
+            <fieldset>
+                <legend>SHIFTS</legend>
+            
+                <ul id="shifts-ver">
+                    <li><strong>School Term:</strong> TN_WD_Mar24e-2 (DataSet 4896)</li>
+                    <li><strong>School Holidays:</strong> TN_SH_Mar24e-1 (DataSet 4896)</li>
+                    <li><strong>Weekend:</strong> TN_WN_Mar24e-2 (DataSet 4896)</li>
+                    <li>If the last part of the footer on the company's shift card differs from the version number above, the shift database needs an update.</li>
+                </ul>
+            </fieldset>
+            <fieldset id="routes-and-stops">
+            <legend>ROUTES & STOPS:</legend>
+                <ul>
+                    <li><a href="https://www.baybus.co.nz/help-and-contact/general-transit-feed-specification/" target="_blank">GTFS File December 2024</a> <<==Click this link to check the file's date on the new page. If it’s different, an update is needed.</li>
+                </ul>
+            </fieldset>
+        </ul>
+        
+        
+        
+        <section id="contact-section">
+            <h2>Feedback Form</h2>
+            <form action="https://formspree.io/f/mjkybokv" class="fs-form" target="_top" method="POST">
+                <div class="fs-field">
+                    <label class="fs-label" for="email">Email</label>
+                    <input class="fs-input" id="email" name="email" required />
+                </div>
+                <div class="fs-field">
+                    <label class="fs-label" for="message">Message</label>
+                    <textarea class="fs-textarea" id="message" name="message"></textarea>
+                </div>
+                <div class="fs-button-group">
+                    <button class="fs-button" type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+        <section id="copyright">
+        <p>&copy; 2025 Preston Chen - <a href="https://opensource.org/license/mit">MIT license</a></p>
+        <p>Bus emoji designed by <a href="https://openmoji.org/">OpenMoji</a> - License: <a href="https://creativecommons.org/licenses/by-sa/4.0/#">CC BY-SA 4.0</a></p>
+    </section>
+    </div>
+    <script>
+        // Service Worker 注册
+        if ("serviceWorker" in navigator) {
+            console.log("about page: 注册 Service Worker 中...");
+            navigator.serviceWorker
+                .register("./service-worker.js")
+                .then((registration) => {
+                    console.log("about page: Service Worker 已注册:", registration);
+                    registration.addEventListener("updatefound", () => {
+                        const newWorker = registration.installing;
+                        newWorker.addEventListener("statechange", () => {
+                            if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
+                                console.log("about page: 有新版本的 Service Worker 可用");
+                                if (confirm("A new version ABOUT PAGE is available. Refresh to update?")) {
+                                    newWorker.postMessage({ action: "skipWaiting" });
+                                }
+                            }
+                        });
+                    });
+                })
+                .catch((err) => console.error("about page: Service Worker 注册失败:", err));
+
+            navigator.serviceWorker.addEventListener("controllerchange", () => {
+                console.log("about page: 正在载入新版本的 Service Worker");
+                window.location.reload();
+            });
+
+            navigator.serviceWorker.addEventListener("message", (event) => {
+                if (event.data && event.data.action === "skipWaiting") {
+                    console.log("about page: Skipping waiting via message");
+                }
+            });
+        }
+    </script>
+</body>
+</html>
