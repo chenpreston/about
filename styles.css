@@ -54,7 +54,7 @@ li {
 
 /* 联系表单容器 */
 #contact-section {
-    margin-bottom: 3em;
+    margin-bottom: 0em;
     border: #000 solid 1px;
     padding: 1em;
     border-radius: 5px;
@@ -152,12 +152,17 @@ button:hover {
     text-align: center;
     font-size: 0.8em;
 }
+
+
 #copyright p:first-child {
-    margin-top: 6em;
+    margin-top: 3em;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 #copyright p:last-child {
     margin-bottom: 3em;
 }
+
 li {
     margin: 0;
     font-size: 0.8em;
@@ -167,4 +172,16 @@ li {
 }
 #shifts-ver li:last-child {
     margin-top: 1em;
+}
+
+
+#buy-me-a-coffee img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 1em;
 }

@@ -1,4 +1,4 @@
-const CACHE_NAME = "about-page-cache-v0.1.2"; // 更新缓存时修改版本号                                    
+const CACHE_NAME = "about-page-cache-v0.1.3"; // 更新缓存时修改版本号                                       
 const urlsToCache = [
   "/",
   "./index.html",
@@ -6,6 +6,13 @@ const urlsToCache = [
   "./counting.svg",
   "./route.svg",
   "./shift.svg",
+  "./driver.svg",
+  "./truck.svg",
+  "./truck-pickup.svg",
+  "./van.svg",
+  "./scripts.js",
+  "./styles.css",
+
 ];
 
 // 安装事件
