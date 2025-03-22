@@ -1,4 +1,4 @@
-const CACHE_NAME = "about-page-cache-v0.1.3"; // 更新缓存时修改版本号                                       
+const CACHE_NAME = "about-page-cache-v0.1.4"; // 更新缓存时修改版本号                                       
 const urlsToCache = [
   "/",
   "./index.html",
