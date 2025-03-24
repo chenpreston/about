@@ -37,14 +37,23 @@ ul {
     padding: 0;
 }
 li {
-    margin-bottom: 0.5rem;
+    list-style-type: "*" !important;
+    margin-bottom: 0.5em;
+    padding: 5px;
 }
 #whats-new {
     margin-bottom: 3em;
     border: #000 solid 1px;
     padding: 1em;
     border-radius: 5px;
+    
 }
+
+#whats-new img{
+    padding: 2px 5px;
+    
+}
+
 #data-ver {
     margin-bottom: 3em;
     border: #000 solid 1px;
