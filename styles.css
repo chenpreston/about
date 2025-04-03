@@ -48,12 +48,17 @@ li {
     margin-bottom: 0.5em;
     padding: 0.2em;
 }
-#whats-new {
+#whats-new, #help {
     margin-bottom: 3em;
     border: #000 solid 0.1em;
     padding: 1em;
     border-radius: 0.5em;
     
+}
+
+#help a {
+    display: flex;
+    margin: 1em auto;
 }
 
 #whats-new img{
