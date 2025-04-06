@@ -75,6 +75,7 @@
                 <li>shields.io badges removed.</li>
                 <li>New "How to install?" Section.</li>
                 <li>Add 2 PDF files for installation guide.</li>
+                <li>Add a Comment function.</li>
             </ul>
         </div>
         <img src="./svgs/truck.svg" width="50">
@@ -120,6 +121,29 @@
                 </div>
             </form>
         </section>
+<img src="./svgs/bus.svg" width="50">
+        <div id="comments">
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://busflow.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>    
+        </div>
+
         <section id="copyright">
             <p>Like it?</p>
             <a id="buy-me-a-coffee" href="https://www.buymeacoffee.com/prestonchen" target="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a flat white&emoji=☕&slug=prestonchen&button_colour=FFDD00&font_colour=000000&font_family=Lato&outline_colour=000000&coffee_colour=ffffff"></a>
