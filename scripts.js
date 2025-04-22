@@ -10,7 +10,7 @@ if ("serviceWorker" in navigator) {
                 newWorker.addEventListener("statechange", () => {
                     if (newWorker.state === "installed" && navigator.serviceWorker.controller) {
                       
-                        if (confirm("A new version ABOUT PAGE is available. Refresh to update?")) {
+                        {
                             newWorker.postMessage({ action: "skipWaiting" });
                         }
                     }
