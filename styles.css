@@ -187,11 +187,12 @@ button:hover {
 }
 
 
-#copyright p:first-child {
+/* #copyright p:first-child {
     margin-top: 3em;
     font-size: 1.2em;
     font-weight: bold;
 }
+    */
 #copyright p:last-child {
     margin-bottom: 3em;
 }
