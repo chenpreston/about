@@ -17,6 +17,8 @@ const urlsToCache = [
   "./svgs/car.svg",
   "./svgs/android.svg",
   "./svgs/apple.svg",
+  "./androidguide.pdf",
+  "./iphoneguide.pdf",
 
 ];
 
